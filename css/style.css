@@ -7,6 +7,10 @@
     margin-top: 80px;
 }
 
+.alert{
+    cursor: pointer;
+}
+
 .quiz{
     margin-top: 20px;
 }

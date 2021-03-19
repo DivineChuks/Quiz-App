@@ -3,19 +3,19 @@ let questions = [
     {
         number: 1, 
         question: 'What does CSS stand for?',
-        answer: 'Cascading style sheet',
+        answer: 'd. Cascading style sheet',
         options: [
-            'a. Hypertext Mark up language.',
-            'b. Cascading preprocessor',
+            'a. Colorful style sheet.',
+            'b. Computer style sheet',
             'c. Cascading styling software.',
-            'd. Cascading styling style'
+            'd. Cascading style sheet'
         ]
     },
 
         {
         number: 2, 
         question: 'What does HTML stand for?',
-        answer: 'Hpertext Mark up language',
+        answer: 'b. Hypertext mark up language',
         options: [
             'a. Hypertext made up language',
             'b. Hypertext mark up language',
@@ -27,7 +27,7 @@ let questions = [
     {
         number: 3, 
         question: 'What does PHP stand for?',
-        answer: 'Hpertext Preprocessor',
+        answer: 'c. Hypertext preprocessor',
         options: [
             'a. Hypertext made up language',
             'b. Hypertext mark up language',
@@ -39,7 +39,7 @@ let questions = [
         {
             number: 4, 
             question: 'Title tag must be within?',
-            answer: 'Header',
+            answer: 'c. Header',
             options: [
                 'a. Title',
                 'b. Form',
@@ -50,7 +50,7 @@ let questions = [
             {
                 number: 5, 
                 question: 'JavaScript is a___side programming language',
-                answer: 'Client',
+                answer: 'a. Client',
                 options: [
                     'a. Client',
                     'b. Server',
@@ -61,7 +61,7 @@ let questions = [
                 {
                     number: 6, 
                     question: 'Which JavaScript label catches all the values, except for the ones specified?',
-                    answer: 'Catch',
+                    answer: 'a. Catch',
                     options: [
                         'a. Catch',
                         'b. Label',
@@ -72,7 +72,7 @@ let questions = [
                     {
                         number: 7, 
                         question: 'Which are the correct "if" statements to execute certain code if “x” is equal to 2?',
-                        answer: 'if(x==2)',
+                        answer: 'c. if(x==2)',
                         options: [
                             'a. if(x2)',
                             'b. if(x=2)',
@@ -83,7 +83,7 @@ let questions = [
                         {
                             number: 8, 
                             question: 'Which one of these is a JavaScript package manager?',
-                            answer: 'npm',
+                            answer: 'a. npm',
                             options: [
                                 'a. npm',
                                 'b. node js',
@@ -94,7 +94,7 @@ let questions = [
                             {
                                 number: 9, 
                                 question: 'Which one of these is a JavaScript framework?',
-                                answer: 'npm',
+                                answer: 'c. React',
                                 options: [
                                     'a. Mongo Db',
                                     'b. Typescript',
@@ -105,7 +105,7 @@ let questions = [
                                 {
                                     number: 10, 
                                     question: 'Who invented Javascript',
-                                    answer: 'Brendan Eich',
+                                    answer: 'd. Brendan Eich',
                                     options: [
                                         'a. Chamberlain',
                                         'b. Suleivan',

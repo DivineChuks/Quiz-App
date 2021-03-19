@@ -5,7 +5,8 @@ const info = document.getElementById('info');
 const startQuiz = document.getElementById('startQuiz');
 const exitQuiz = document.getElementById('exitQuiz');
 const quizQuestion = document.getElementById('questionBox');
-const nextBtn = document.getElementById('next')
+const nextBtn = document.getElementById('next');
+const optionList = document.getElementById('options');
 
 // Add event listener to the start button
 
@@ -69,7 +70,6 @@ function showQuestions(index){
     let questionText = document.getElementById('questionText')
     let questionTag = `<h3>${questions[index].number}. ${questions[index].question}</h3>`;
     questionText.innerHTML = questionTag;
-    let optionList = document.getElementById('options');
     let optionTag = `<div class="options">
     <div class="alert alert-secondary">
       <button type="button" class="close"></button>
@@ -92,12 +92,10 @@ function showQuestions(index){
     </div>
     `
     optionList.innerHTML = optionTag;
-
-    //  const listOption = optionList.querySelectorAll('.alert alert-secondary')
-    //  for(let i=0; i <listOption.length; i++){
-    //      console.log(listOption[i])
-    // //     option[i].setAttribute('onclick', 'optionSelected(this)')
-    // // }
+    const option = optionList.querySelectorAll('.alert')
+     for(let i=0; i <option.length; i++){
+        option[i].setAttribute('onclick', 'optionSelected(this)');
+    }
 }
 
 
@@ -106,12 +104,21 @@ function questCounter(index){
     let questionCountdiv = document.getElementById('questionCounter').innerHTML = questionCountTag;
 }
 
-// function optionSelected(answer){
-//     let userAns = answer.textcontent;
-//     let correctAns = questions[questCount].answer;
-//     if(userAns === correctAns){
-//         answer.classList.add('alert alert-success')
-//     }else{
-//         answer.classList.add('alert alert-danger')
-//     }
-// }
+function optionSelected(answer){
+    let userAns = answer.textContent;
+    let correctAns = questions[questCount].answer;
+    let allOptions = optionList.children.length;
+    console.log(allOptions) 
+    if(userAns.trim() == correctAns.trim()){
+        answer.classList.add('alert-success')
+    }else{
+        answer.classList.add('alert-danger')
+    }
+
+    // disable other options
+
+    for(let i = 0; i<allOptions.length; i++){
+        optionList.children.length[i].classList.add('disabled');
+    }
+}
+
